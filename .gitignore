@@ -1,0 +1,41 @@
+## Custom gitignore settings
+
+# References includes some .dll files that are needed for building but can't be distributed
+References/*
+!.References
+
+# Ignore user- and environment-specifc settings 
+SiteGuard.sln.DotSettings.user
+[Aa]pp.config
+
+## Ignore JetBrains Rider user-specific, auto-generated
+## sensitive, and temporary files
+
+# All project-specific and user-specfic settings, all .iml files
+**/.idea/
+*.iml
+
+# Build results
+[Bb]in/
+[Oo]bj/
+[Pp]ackages/
+
+# User-specific
+**/.idea/**/workspace.xml
+**/.idea/**/tasks.xml
+**/.idea/dictionaries/
+**/.idea/shelf/
+**/.idea/httpRequests/
+
+# Auto-generated
+**/.idea/**/*.iml
+**/.idea/**/contentModel.xml
+**/.idea/**/modules.xml
+
+# Sensitive or high-churn files
+**/.idea/**/dataSources/
+**/.idea/**/dataSources.ids
+**/.idea/**/dataSources.xml
+**/.idea/**/dataSources.local.xml
+**/.idea/**/sqlDataSources.xml
+**/.idea/**/dynamic.xml
